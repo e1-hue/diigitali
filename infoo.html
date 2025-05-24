@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px; /* Increased margin around the whole page */
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        .notes {
+            margin-top: 30px;
+            font-style: italic;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-left: 4px solid #555;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+        .category-header {
+            font-weight: bold;
+            background-color: #eaeaea;
+            text-align: left;
+            font-size: 1.1em;
+            padding: 12px;
+        }
+        input[type="checkbox"] {
+            transform: scale(1.3);
+            margin: 5px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    /* Logo Styling */
+  .header-logo {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .header-logo img {
+    width: 100px;  /* Smaller width */
+    height: 100;
+  }
+    </style>
+</head>
+  <div class="header-logo">
+    <img src="Pathmaker tall logo V1 JPEG file (1).jpg" alt="Pathmaker Logo">
+  </div>
+<body>
+    
+    
+    <table>
+        <!-- Header Row (Dark Gray Background) -->
+        <tr style="background-color: #555; color: white;">
+            <td colspan="4" style="text-align: center; padding: 12px; font-weight: bold;">
+                Job Information
+            </td>
+        </tr>
+        <!-- Content Rows -->
+        <tr>
+            <!-- Left Column -->
+            <td>Technician:</td>
+            <td><input type="text"></td>
+            
+            <!-- Right Column (Top: Date) -->
+            <td>Date:</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <!-- Left Column -->
+            <td>CRT Serial #:</td>
+            <td><input type="text"></td>
+            
+            <!-- Right Column (Bottom: Rig #) -->
+            <td>Rig #:</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+
+    <table>
+        <!-- Header Row (Dark Gray Background) -->
+        <tr style="background-color: #555; color: white;">
+            <td colspan="4" style="text-align: center; padding: 12px; font-weight: bold;">
+                CRT Build Information
+            </td>
+        </tr>
+        <tr>
+            <td>CRT Make:</td>
+            <td><input type="text"></td>
+            <td>CRT Serial Number</td>
+            <td><input type="text" ></td>
+        </tr>
+        <tr>
+            <td>Dies Size / Range:</td>
+            <td><input type="text" ></td>
+            <td>Pressure: <input type="text"></td>
+            <td>Vacuum: <input type="text"></td>
+        </tr>
+        <tr>
+            <td>Stab Guide Size Range:</td>
+            <td><input type="text" ></td>
+            <td>B/U Ring Size Range:</td>
+            <td><input type="text" ></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center; color: red; padding: 12px; font-weight: bold;">
+                Measure ALL cups to ensure the OD will seal on the ID of the Casing
+            </td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td>Packer Cup On CRT OD:</td>
+            <td><input type="text"></td>
+            <td>Casing ID</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center; color: black; padding: 12px; font-weight: bold; background-color: #f5f5f5;">
+                Bleed off all air pressure and remove Schrader Valve
+            </td>
+        </tr>
+    </table>   
+    
+    <table>
+        <tr>
+            <td colspan="2" class="category-header">Category 2A Inspection</td>
+        </tr>
+        <tr>
+            <td style="width: 30px;"><input type="checkbox" /></td>
+            <td>Clean the exterior of the CRTi tool.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Inspect casing seal assembly. Replace seal assembly as required.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Assess latching alignment marks and repaint if necessary.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Unlatch CRT and remove a die; evaluate thread compound condition and coverage.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Check all exposed fasteners for signs of damage.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Clean tool joint thread and conduct visual inspection to ensure that condition is acceptable.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Check that the outside diameter of the Casing Seal Assembly is equal to or greater than the maximum inside diameter of the pipe that is being run.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Reassemble the CRTi tool: Reapply appropriate lubricants, re-torque fasteners, and replace seals and fasteners as needed.</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="category-header">Category 2B Inspection</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Perform all the steps above.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Visually inspect tooth wear on dies.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Inspect thread compound on cam surfaces to ensure adequate coverage and no contamination.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Clean thread compound from Lower Cam and Intermediate Cam. Conduct a visual inspection of the cams, Active Foot, and Latch.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Examine the sealing surface on the Mandrel below the Upper Cam.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Examine the Upper Cam.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Examine the Mandrel and Jaw cones.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td>Reassemble the CRTi tool: Reapply appropriate lubricants, re-torque fasteners, and replace seals and fasteners as needed.</td>
+        </tr>
+    </table>
+    
+    <div class="notes">
+        <h3>NOTES</h3>
+        <textarea></textarea>
+    </div>
+</body>
+</html>
